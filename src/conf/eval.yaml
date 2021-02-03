@@ -1,0 +1,6 @@
+eval_ark: ../data/
+eval_scp: ../data/test/cmvn-fbank.scp
+eval_text: ../data/test/labels.eval.gz
+eval_len: ../data/test/utt2num_frames
+eval_out: ../data/exp/eval.txt
+eval_type: word

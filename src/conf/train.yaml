@@ -1,0 +1,38 @@
+# model
+n_layers: 6
+n_hidden: 512
+dropout: 0.35
+pooling: concat
+data_sample_rate: 2
+lstm_sample_rate: 4
+segment_size: 32
+
+# training
+optim: Adam
+lr: 0.0005
+max_grad: 25
+scheduler: ReduceLROnPlateau
+batch_size: 32
+accum_batch_size: 32
+dev_batch_size: 8
+penalize_emb: batch
+lambda_emb: 0.0
+epoch: 4
+shuffle: true
+amp: 0
+add_spec_aug: 1
+seg_word_samples: 3000
+weight_decay: 1e-4
+
+# data
+train_ark: ../data/ # root path
+train_scp: ../data/train/cmvn-fbank.scp
+train_text: ../data/train/labels.tr.gz
+train_len:  ../data/train/utt2num_frames
+
+dev_ark: ../data/ # root path
+dev_scp: ../data/dev/cmvn-fbank.scp
+dev_text: ../data/dev/labels.cv.gz
+dev_len:  ../data/dev/utt2num_frames
+
+wordlist: ../data/units.txt
