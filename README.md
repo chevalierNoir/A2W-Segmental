@@ -21,8 +21,8 @@ cd src
 ! Note before running `./run.sh`, make sure following paths are correctly set including `KALDI_ROOT` in `path.sh`, `CC,CXX,PATH,LD_LIBRARY_PATH` in `run.sh` 
 
 ## ToDo:
-- [X] Code release for segmental model
-- [] Code release for AWE/AGWE pre-training
+- [x] Code release for segmental model
+- [ ] Code release for AWE/AGWE pre-training
 
 
 ## Reference
