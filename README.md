@@ -21,7 +21,7 @@ cd src
 ! Note before running `./run.sh`, make sure following paths are correctly set including `KALDI_ROOT` in `path.sh`, `CC,CXX,PATH,LD_LIBRARY_PATH` in `run.sh` 
 
 ## ToDo:
-- [X] *Code release for segmental model*
+- [X] Code release for segmental model
 - [] Code release for AWE/AGWE pre-training
 
 
@@ -29,9 +29,9 @@ cd src
 
 Please cite the paper below if you use this code in your research:
 
-@inproceedings{shi2021segmental,
-   author = {Bowen Shi and Shane Settle and Karen Livescu},
-   title = {Whole-Word Segmental Speech Recognition with Acoustic Word Embeddings},
-   booktitle = {SLT},
-   year = {2021}
-}
+    @inproceedings{shi2021segmental,
+      author = {Bowen Shi and Shane Settle and Karen Livescu},
+      title = {Whole-Word Segmental Speech Recognition with Acoustic Word Embeddings},
+      booktitle = {SLT},
+      year = {2020}
+    }
