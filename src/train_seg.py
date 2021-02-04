@@ -140,10 +140,6 @@ def main():
         from sampler import BucketBatchSampler
         train_loader = tud.DataLoader(train_data, batch_sampler=BucketBatchSampler(shuffle=args.shuffle, batch_size=args.batch_size, files=train_data.ark_fns, lengths=train_data.lengths, milestones=batch_milestones, cycle=True, seeds=list(loader_seeds)), collate_fn=dataset.collate_fn)
         dev_loader = tud.DataLoader(dev_data, batch_sampler=BucketBatchSampler(shuffle=False, batch_size=args.dev_batch_size, files=dev_data.ark_fns, lengths=dev_data.lengths, milestones=batch_milestones, cycle=False), collate_fn=dataset.collate_fn)
-    elif args.batch_sampler == 'frame':
-        from sampler import FrameCountSampler
-        train_loader = tud.DataLoader(train_data, batch_sampler=FrameCountSampler(shuffle=args.shuffle, batch_size=args.batch_size, files=train_data.ark_fns, lengths=train_data.lengths, seeds=list(loader_seeds)), collate_fn=dataset.collate_fn)
-        dev_loader = tud.DataLoader(dev_data, batch_sampler=FrameCountSampler(shuffle=False, batch_size=args.dev_batch_size, files=dev_data.ark_fns, lengths=dev_data.lengths), collate_fn=dataset.collate_fn)
     else:
         raise NotImplementedError
 
