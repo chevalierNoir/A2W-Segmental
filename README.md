@@ -33,5 +33,5 @@ Please cite the paper below if you use this code in your research:
       author = {Bowen Shi and Shane Settle and Karen Livescu},
       title = {Whole-Word Segmental Speech Recognition with Acoustic Word Embeddings},
       booktitle = {SLT},
-      year = {2020}
+      year = {2021}
     }
